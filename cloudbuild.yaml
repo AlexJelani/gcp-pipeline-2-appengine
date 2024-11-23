@@ -3,4 +3,5 @@ options:
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/devops-442409/alexjelani/gcp-pipeline-1:$COMMIT_SHA', '.']
-
+images:
+  - 'gcr.io/devops-442409/alexjelani/gcp-pipeline-1:$COMMIT_SHA'
